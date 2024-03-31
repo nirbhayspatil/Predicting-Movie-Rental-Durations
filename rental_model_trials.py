@@ -38,7 +38,7 @@ dt_pred = dt.predict(X_test)
 dt_mse = mean_squared_error(y_test, dt_pred)
 
 svr = SVR()
-svr.fit(X_test, y_test)
+svr.fit(X_train, y_train)
 svr_pred = svr.predict(X_test)
 svr_mse = mean_squared_error(y_test, svr_pred)
 
